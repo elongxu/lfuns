@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html style="font-size: 24.1875px;">
+
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <avalon ms-skip="" class="avalonHide">
+        <style id="avalonStyle">
+            .avalonHide {
+                display: none!important
+            }
+        </style>
+        <div ms-if="shopAgentInfoState&gt;-1">
+            <div class="clearfix">
+                <a class="fl ttab caiyou b" href="https://caibao918.com/lottery/shop_rank.html">
+                    <div class="icon"></div>
+                    <p>本店彩友</p>
+                </a>
+                <a class="fl ttab agent b" ms-on-tap="linkToAgent">
+                    <div class="icon"></div>
+                    <p>我是助理</p>
+                    <div class="new"></div>
+                </a>
+                <a class="fl ttab dingtou b" href="https://caibao918.com/lottery/zhuihao.html">
+                    <div class="icon"></div>
+                    <p>定投追号</p>
+                </a>
+
+            </div>
+
+            <div class="clearfix">
+                <a class="fl ttab hongbao2 b" ms-on-tap="hhbbHandler">
+                    <div class="icon"></div>
+                    <p>彩票红包</p>
+                </a>
+
+                <a class="fl ttab fund b" href="https://caibao918.com/lottery/fund_list.html">
+                    <div class="icon"></div>
+                    <p>店主众筹</p>
+                </a>
+                <!--<a class="fl ttab levels b" href="level.html">-->
+                <!--<div class="icon"></div>-->
+                <!--<p>等级说明</p>-->
+                <!--</a>-->
+                <a class="fl ttab aboutus b" href="https://caibao918.com/lottery/about_us.html">
+                    <div class="icon"></div>
+                    <p>关于我们</p>
+                </a>
+            </div>
+
+            <div class="clearfix">
+
+            </div>
+        </div>
+    </avalon>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="个人中心">
+    <meta name="keywords" content="个人中心">
+
+    <title>个人中心</title>
+
+
+    <link rel="stylesheet" href="stylesheets/self.css">
+</head>
+
+<body class="page-me page_buy_together" avalonctrl="SelfController">
+    <div class="start_user clearfix" avalonctrl="HeaderController">
+        <a class="fl image-wrap" href="https://caibao918.com/lottery/user.html?userId=2424675" style="background: rgba(0, 0, 0, 0) url(&quot;null&quot;) no-repeat scroll center center;"></a>
+        <div class="fl top-text">
+            <p class="name text-overflow mmx">
+                <!--<a class="verified"></a>-->
+                <a class="level" style="background: rgba(0, 0, 0, 0) url(&quot;images/v4/level_1.jpg&quot;) no-repeat scroll center center;"></a>
+            </p>
+
+            <p class="point">
+                <span class="score">积分 0</span>
+                <span class="split"></span>
+                <span class="fans">粉丝 0</span>
+            </p>
+        </div>
+        <a class="s_btn fr" href="https://caibao918.com/lottery/self_info.html" style="display: block;">
+            <div class="clearfix">
+                <span class="fl">个人设置</span>
+                <i class="right_icon fr"></i>
+            </div>
+        </a>
+        <div class="bb_tn fr" style="display: none;">
+            <a class="tn1 tt" href="https://caibao918.com/lottery/self_info.html">
+                个人设置
+            </a>
+            <a class="tn1 tt2" href="https://caibao918.com/lottery/shop_center.html">
+                切换卖家版
+            </a>
+        </div>
+    </div>
+
+    <section class="old_tip" style="display: none;">您好，因为钱包升级，老钱包余额请尽快提出</section>
+
+
+    <div class="wallet" avalonctrl="HeaderController">
+        <!--<div class="wallet_head red">升级后钱包</div>-->
+        <div class="wallet_content red">
+            <p>可用余额(元)</p>
+
+            <!--<p class="money">{{llUserInfo.balance/100|number(2)}}</p>-->
+            <p class="money">0.00</p>
+
+            <p>
+                <a class="bill_de" href="https://caibao918.com/lottery/ll_bill.html">账单明细</a>
+            </p>
+
+            <a class="ver_code " href="https://caibao918.com/lottery/ll_auth.html" style="display: none;"></a>
+
+            <div class="ver_code active" style="display: none;"></div>
+        </div>
+        <div class="wallet_foot flex-box">
+            <a class="flex-item left">充值</a>
+            <a class="flex-item">提现</a>
+        </div>
+
+        <a class="new_wallet" href="https://caibao918.com/lottery/old_money.html" style="display: none;"></a>
+    </div>
+
+
+    <!--<div class="bankVery"-->
+    <!--ms-visible="showBank"-->
+    <!--ms-on-tap="linkBank"></div>-->
+
+    <div class="ttabs clearfix" avalonctrl="HeaderController">
+
+        <div class="clearfix">
+            <a class="fl ttab order b" href="https://caibao918.com/lottery/orders.html">
+                <div class="icon"></div>
+                <p>订单中心</p>
+            </a>
+            <a class="fl ttab hongbao b" href="https://caibao918.com/lottery/hb_bill.html">
+                <div class="icon"></div>
+                <p>红包收入</p>
+            </a>
+            <a class="fl ttab geren b" href="https://caibao918.com/lottery/user.html?userId=2424675">
+                <div class="icon"></div>
+                <p>个人主页</p>
+            </a>
+        </div>
+
+        <!--ms-if-->
+
+
+
+        <div>
+            <div class="clearfix">
+                <a class="fl ttab caiyou b" href="https://caibao918.com/lottery/shop_rank.html">
+                    <div class="icon"></div>
+                    <p>本店彩友</p>
+                </a>
+                <a class="fl ttab fund b" href="https://caibao918.com/lottery/fund_list.html">
+                    <div class="icon"></div>
+                    <p>店主众筹</p>
+                </a>
+
+                <!--定投追号-->
+                <a class="fl ttab dingtou b" href="https://caibao918.com/lottery/zhuihao.html">
+                    <div class="icon"></div>
+                    <p>定投追号</p>
+                </a>
+            </div>
+            <div class="clearfix">
+                <a class="fl ttab hongbao2 b">
+                    <div class="icon"></div>
+                    <p>彩票红包</p>
+                </a>
+                <!--<a class="fl ttab proto2 b" href="protocol_2.html">-->
+                <!--<div class="icon"></div>-->
+                <!--<p>用户协议</p>-->
+                <!--</a>-->
+                <a class="fl ttab levels b" href="https://caibao918.com/lottery/level.html">
+                    <div class="icon"></div>
+                    <p>等级说明</p>
+                </a>
+                <a class="fl ttab aboutus b" href="https://caibao918.com/lottery/about_us.html">
+                    <div class="icon"></div>
+                    <p>关于我们</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-wrap222 clearfix">
+        <div class="flex-item222 index" style="display: none;">
+            <i class="icon index"></i>
+            <p>首页</p>
+
+            <div class="menu2" style="display: none;">
+                <div class="mmm_w">
+                    <div class="bt fucai">
+                        <a href="index.html"></a>
+                    </div>
+                    <div class="ticai">
+                        <a href="https://caibao918.com/lottery/index2.html"></a>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="s" ms-visible="showMenu"></div>-->
+        </div>
+        <a class="flex-item222 index" href="index.html" style="display: block;">
+            <i class="icon index"></i>
+            <p>首页</p>
+        </a>
+
+        <a class="flex-item222" href="shop_together.html?sid=67">
+            <i class="icon rank"></i>
+            <p>合买社区</p>
+        </a>
+        <a class="flex-item222" href="find.html?shopId=67">
+            <i class="icon together"></i>
+            <p>发现</p>
+        </a>
+        <a class="flex-item222 active">
+            <i class="icon self"></i>
+            <p>我的</p>
+        </a>
+    </div>
+
+
+    <div style="display: none;">
+        <!--ms-include-->
+        <div class="dlg_mask">
+            <div class="dlg_wrap_val">
+                <div class="dg_header_val"></div>
+                <div class="dg_contents_val">
+                    <div class="dg_text2">
+                        <span>此店您还没有下单记录，可能存在一定风险，</span>请你核实下方店铺信息后再选择进入</div>
+                    <div class="top">
+                        <div class="top-head clearfix">
+                            <div class="fl image-wrap"></div>
+                            <div class="fl top-text">
+                                <p class="name"></p>
+                                <p class="tip tip1"> 店主: </p>
+                                <p class="tip">地址: </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dg_footer_val flex-box">
+                    <div class="flex-item">拒绝</div>
+                    <div class="flex-item active">信任</div>
+                </div>
+            </div>
+        </div>
+        <!--ms-include-end-->
+    </div>
+
+    <!-- <script type="text/javascript" src="js/self.js"></script> -->
+
+</body>
+
+</html>
